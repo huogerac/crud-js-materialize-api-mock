@@ -1,0 +1,31 @@
+{
+  "ativos": [
+    {
+      "id": 1,
+      "nome": "Notebook Dell Inspirion",
+      "modelo": "Inspirion 13",
+      "fabricante": "Dell",
+      "serie": "ABC",
+      "ativo": "203090",
+      "usuario": "joao@example.com"
+    },
+    {
+      "id": 2,
+      "nome": "Notebook Dell Inspirion",
+      "modelo": "Inspirion 13",
+      "fabricante": "Dell",
+      "serie": "ABJ",
+      "ativo": "203091",
+      "usuario": "joao@example.com"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "joao@example.com",
+      "nome": "João",
+      "time": "dev",
+      "local": "sjc"
+    }
+  ]
+}

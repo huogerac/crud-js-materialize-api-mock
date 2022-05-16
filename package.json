@@ -1,0 +1,22 @@
+{
+  "name": "ativos-mock",
+  "version": "1.0.0",
+  "description": "Gerenciador de ativos",
+  "main": "index.js",
+  "scripts": {
+    "api:mock": "node api/mock/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huogerac/ativos-mock.git"
+  },
+  "author": "Roger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huogerac/ativos-mock/issues"
+  },
+  "homepage": "https://github.com/huogerac/ativos-mock#readme",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}
