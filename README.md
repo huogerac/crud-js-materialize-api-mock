@@ -22,4 +22,8 @@ npm install
 
 npm run api:mockcrud-js-materialize-api-mock
 
+correção do último Comando:
+npm run api:mock
+
+
 ```
