@@ -7,6 +7,8 @@
 ```
 curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 
+sudo apt-get update
+
 sudo apt -y install nodejs
 ```
 
@@ -21,9 +23,8 @@ cd  crud-js-materialize-api-mock
 npm install
 
 npm run api:mockcrud-js-materialize-api-mock
-
+```
 correção do último Comando:
+```
 npm run api:mock
-
-
 ```
