@@ -1,11 +1,22 @@
 /* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
 
-.icon-block {
-  padding: 0 15px;
+/* Change the scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffd27e;
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
+
+.add {
+  position: absolute;
+  top: 26px;
+  right: 16px;
 }

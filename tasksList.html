@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Todo List</title>
+
+    <!-- Materialize CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <!-- Fontawesome 6 CND-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  </head>
+  <body>
+    <nav class="orange darken-2">
+      <div class="nav-wrapper"></div>
+    </nav>
+
+    <div class="container">
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12" id="elTasks">
+            <!-- New tasks area-->
+          </div>
+        </div>
+      </div>
+      <div class="add">
+        <a class="btn-floating btn-large waves-effect waves-light red" href="tasksNew.html"
+          ><i class="fa-solid fa-plus"></i
+        ></a>
+      </div>
+    </div>
+
+    <footer class="page-footer orange darken-3">
+      <div class="footer-copyright">
+        <div class="container">© 2022 Frontend</div>
+      </div>
+    </footer>
+
+    <!-- Materialize JavaScript CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/tasks.js"></script>
+    <script>
+      let elTasks = document.getElementById('elTasks')
+
+      getTasks().then((tasks) => {
+        console.log(tasks)
+        for (let item in tasks) {
+          let newTaskElement = createCardElementFrom(tasks[item])
+          elTasks.appendChild(newTaskElement)
+        }
+      })
+    </script>
+  </body>
+</html>
